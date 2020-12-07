@@ -1,0 +1,113 @@
+* {padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-size: 4rem;
+    padding-top: 8rem;
+}
+p{
+    font-size: 2em;
+    color:  rgb(218, 19, 5);
+    margin-bottom: 1.1rem;
+    margin-top: 2rem;
+    
+}
+
+input[type=text], input[type=email],input[type=number]{
+    width: 30%;
+    margin-bottom: 2rem;
+    margin-top: 1.3rem;
+    padding: 1.3rem;
+    border: 2px solid green;
+}
+label[for=services]{
+    font-size: 2em;
+}
+label[for=definitely], label[for=maybe], label[for=notsure]{
+    font-size: 2em;
+    margin-top: 2rem;
+}
+
+@media (max-width: 675px) {
+    label[for=definitely], label[for=maybe], label[for=notsure] {
+      width: 60%;
+    }
+  }
+
+#description{
+    font-size: 2rem;
+    font-style: italic;
+    color: black;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+#container {
+background-image: url(wab3.jpg);
+background-repeat: repeat;
+background-attachment: fixed;  
+}
+
+#title{
+    text-align: center;
+    font-size: 1.3em;
+    font-style: inherit;
+    color:black;
+}
+span{
+    color: rgb(255, 102, 0);
+}
+
+#survey-form{
+    text-align: center;
+    margin: auto;
+}
+
+ form textarea, form select{
+    width: 30%;
+    margin-bottom: 2rem;
+    padding: 1.3rem;
+    border: 2px solid green;
+}
+#name-label, #email-label, #age-label, #number-label{
+    padding-bottom: 2rem;
+    font-size: 2em;
+    color:   rgb(218, 19, 5);
+    margin-top: 2rem;
+    
+}
+::placeholder {
+    font-style: italic;
+}
+
+button{
+    margin-top: 2rem;
+   margin-bottom: 10rem;
+    padding: 1rem 8rem 1rem 7rem;
+    font-size: 1.3rem;
+    color: whitesmoke; 
+    border: none;
+    border-radius: 2rem;
+    background-color:green;
+    cursor: pointer;
+    font-size: 2rem;
+
+}
+button:hover,
+button:focus{
+    background:  rgb(218, 19, 5);
+    color: black;
+    margin-left: 2rem;
+}
+
+
+
+
+    
+

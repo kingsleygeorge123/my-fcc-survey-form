@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Survey Form| for freecodecamp project"/>
+    <meta name="robot" content="index,follow"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<!---body starts here--->
+<body>
+    <div id="container">
+        <!---title starts here--->
+<div id="title">
+    <h1><span>freeCodeCamp</span> Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+</div>
+<!---title ends here/ Form begins here--->
+<div id="survey-form">
+<form id="survey" action="#">
+<label for="name" id="name-label">Name</label><br>
+<input type="text" id="name" name="name" placeholder="Enter your name"><br>
+<label for="email" id="email-label">Email</label><br>
+<input type="email" id="email" name="email" placeholder="Enter your Email..." required><br>
+<label for="age" id="age-label">Age(Optional)</label><br>
+<input type="text" id="age" name="age" placeholder="Enter your Age..."><br>
+<label for="number" id="number-label">Number</label><br>
+<input type="number" id="number" name="number" maxlength="12" minlength="6" placeholder="Enter your Number..." required/><br>
+
+<!---dropdown starts here--->
+<p>Which option best describe your role?</p>
+<select name="current-role" id="dropdown"><br>
+    <option value="placeholder">Select your current role...</option>
+    <option value="student">Student</option>
+    <option value="fulltimejob">Full Time Job</option>
+    <option value="fulltimelearner">Full Time Learner</option>
+    <option value="prefernottosay">Prefer not to say</option>
+    <option value="others">Others</option>
+</select>
+<br>
+
+<!---recommendation buttons starts here--->
+<p>Would you recommend freecodecamp to a friend?</p>
+<input type="radio" name="recommendation" id="definitely"
+value="definitely">
+<label for="definitely">Definitely</label><br>
+<input type="radio" name="recommendation" id="Maybe"
+value="maybe">
+<label for="maybe">Maybe</label><br>
+<input type="radio" name="recommendation" id="notsure"
+value="notsure">
+<label for="notsure">Not Sure</label><br>
+
+<!---checking starts here--->
+<p>What would you like to see us improve (Check all that apply)</p>
+<input type="checkbox" id="services-label"
+name="services" value="frontend">
+<label for="services">Front-End-Projects</label><br>
+<input type="checkbox" id="services-label"
+name="services" value="backend">
+<label for="services">Back-End-Projects</label><br>
+<input type="checkbox" id="services-label"
+name="services" value="data-visualization">
+<label for="services">Data-Visualization</label><br>
+<input type="checkbox" id="services-label"
+name="services" value="wiki">
+<label for="services">Wiki</label><br>
+<input type="checkbox" id="services-label"
+name="services" value="forum">
+<label for="services">Forum</label><br>
+<input type="checkbox" id="services-label"
+name="services" value="videos">
+<label for="services">Videos</label><br>
+<input type="checkbox" id="services-label"
+name="services" value="challenges">
+<label for="services">Challenges</label><br>
+<input type="checkbox" id="services-label"
+name="services" value="frontend">
+<label for="services">Additional Courses</label><br>
+
+<!---textareas starts here--->
+<p>Any comments or suggestions?</p>
+<label for="additional-info"></label>
+<textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here..."></textarea><br>
+<!---submit here--->
+<button>Submit</button>
+</form>
+</div>
+    </div>
+</body>
+</html>
